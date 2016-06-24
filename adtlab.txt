@@ -1,0 +1,45 @@
+•	ADT objects I could use are: 
+	•	game board
+	•	game squares
+	•	players
+	•	scores/outcomes
+	•	winning combinations
+	•	markers
+	•	game itself
+
+
+//game constructor
+function TicTacToeGame(gameBoard, gameSquares, Player, score, reset, marker) {
+  this.Gameboard= Gameboard;
+  this.GameSquares=gameSquares;
+  this.Player=Players;
+  this.Markers=Markers;
+  this.Winner=Winner;
+  this.Reset=Reset;
+}
+
+
+//Gameboard constructor
+function Gameboard (boardSize, squareSize, numOfRows, numOfColumns, numOfSquares, empty, winningCombos, possCombos) {
+  Gameboard.prototype.boardSize = 300;
+  Gameboard.prototype.squareSize = 100;
+  Gameboard.prototype.numOfRows = 3;
+  Gameboard.prototype.numOfSquares= 9;
+ Gameboard.prototype.empty= true;
+ Gameboard.prototype.winningCombos= ['a1b2c3', 'd435f6', 'g7h8i9', 'a1d4g7', 'b2e5h8', 'c3f6i9', 'a1e5i9', 'g7e5c3'];}
+
+//Player constructor
+function Player (name, marker) {
+Player.prototype.name=name;
+Player.prototype.marker = marker;
+};
+
+var PlayerOne = new Player('Player X', 'X');
+var PlayerTwo = new Player('Player O', 'O');
+
+
+function ClickSquare (makeYourMove) {
+  ClickSquare.prototype.makeYourMove = true;
+ 
+ }
+
