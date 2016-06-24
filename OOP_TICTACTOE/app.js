@@ -1,3 +1,4 @@
+window.onload = function() {
 
 function TicTacToeGame(Gameboard, GameSquares, Players, Marker, Score, Reset, winningCombos) {
   TicTacToeGame.prototype.Gameboard=Gameboard;
@@ -93,5 +94,5 @@ $(markerO).on('click', function(){
   
     }
  };
-
+};
 
